@@ -30,16 +30,18 @@ body {
 
 .parent-container > h3 {
     font-weight: 600;
+    margin: 25px 0 10px 0;
 }
 
 .parent-container > h6 {
     color: hsl(75, 94%, 57%);
+    margin: 0 0 25px 0;
 }
 
 .parent-container > p {
-    font-family: InterRegular;
     font-size: 11px;
     color: hsl(39 0% 85%);
+    margin: 0 0 15px;
 }
 
 img {
@@ -62,3 +64,60 @@ img {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media (max-width: 480px) {
+    .parent-container {
+        width: 75%;
+        padding: 15px;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    .parent-container > h3 {
+        font-size: 16px; 
+    }
+
+    .parent-container > h6 {
+        font-size: 12px;
+    }
+
+    .buttons button {
+        font-size: 12px; 
+        padding: 8px; 
+    }
+ }
+ 
+ @media (max-width: 768px) {
+    .parent-container {
+        width: 80%; 
+        padding: 20px;
+    }
+
+    img {
+        width: 60px;
+    }
+
+    .parent-container > h3 {
+        font-size: 18px;
+    }
+
+    .buttons button {
+        font-size: 14px;
+    }
+ }
+ 
+ @media (max-width: 1024px) {
+    .parent-container {
+        width: 90%; 
+    }
+
+    img {
+        width: 70px; 
+    }
+
+    .buttons button {
+        font-size: 16px;
+    }
+ }
