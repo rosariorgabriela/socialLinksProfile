@@ -64,6 +64,13 @@ img {
     padding: 10px 80px 10px 80px;
     margin: 5px;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
 }
 
 .attribution { 
@@ -124,7 +131,7 @@ img {
  @media (max-width: 1024px) {
     .parent-container {
         width: 90%; 
-        box-sizing: border-box;
+        box-sizing: border-box; 
     }
 
     img {
