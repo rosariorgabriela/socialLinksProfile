@@ -24,7 +24,7 @@ body {
     border-radius: 10px;
     width: 300px;
     max-width: 90%;
-    padding: 20px;
+    padding: 45px 20px 50px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -41,7 +41,7 @@ body {
 .parent-container > p {
     font-size: 11px;
     color: hsl(39 0% 85%);
-    margin: 0 0 15px;
+    margin: 0 0 20px 0;
 }
 
 img {
@@ -53,6 +53,17 @@ img {
 .buttons {
     display: flex;
     flex-direction: column;
+}
+
+.buttons button {
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 5px;
+    font-family: InterRegular;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 80px 10px 80px;
+    margin: 5px;
+    border: none;
 }
 
 .attribution { 
@@ -69,6 +80,7 @@ img {
     .parent-container {
         width: 75%;
         padding: 15px;
+        box-sizing: border-box;
     }
 
     img {
@@ -84,8 +96,8 @@ img {
     }
 
     .buttons button {
-        font-size: 12px; 
-        padding: 8px; 
+        font-size: 5px; 
+        padding: 8px 25px 8px 25px; 
     }
  }
  
@@ -93,6 +105,7 @@ img {
     .parent-container {
         width: 80%; 
         padding: 20px;
+        box-sizing: border-box;
     }
 
     img {
@@ -111,6 +124,7 @@ img {
  @media (max-width: 1024px) {
     .parent-container {
         width: 90%; 
+        box-sizing: border-box;
     }
 
     img {
